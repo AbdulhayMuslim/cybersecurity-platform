@@ -1,0 +1,6 @@
+import Image from "next/image";
+import { eyebrow, heading, shell } from "./shared";
+
+export default function ContactSection() {
+  return <section id="contact" className={`${shell} place-items-center bg-[#2753ac] text-center`}><div className="relative z-10"><Image src="/white site icon.png" alt="" width={800} height={318} className="mx-auto mb-4 h-auto w-48 object-contain" /><p className={`${eyebrow} justify-center text-yellow-200`}><span className="h-0.5 w-11 bg-yellow-200" />Your next move matters</p><h2 className={heading}>Ready to become<br /><em className="text-fuchsia-300 not-italic">the human firewall?</em></h2><a className="mt-12 inline-flex rounded-full bg-[#ffe36c] px-9 py-4 text-xl font-bold text-[#1747a6] shadow-[10px_10px_0_rgba(23,59,143,.65)] hover:-translate-y-1" href="/login">Begin training</a></div><footer className="absolute inset-x-[3vw] bottom-7 z-10 grid grid-cols-3 items-end border-t border-white/25 pt-6 text-white/85"><Image src="/whtie site logo.png" alt="AM Security" width={190} height={36} className="h-8 w-auto"/><span className="text-sm">Designed &amp; Developed by Abdullah Muslim</span><span className="text-right text-sm">© 2026 AM SECURITY</span></footer></section>;
+}
